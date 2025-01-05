@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="introjs-custom.css">
     <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
     <link rel="icon" href="data:,">
+   
+
     
     <link rel="stylesheet" href="commande.css">
 </head>
@@ -177,8 +179,24 @@
             // Redirection après 3 secondes
             setTimeout(() => {
                 window.location.href = `payement.html?total=${totalPanier.toFixed(2)}`;
-            }, 3000);
+            }, 2000);
         });
+
+            // Masquer la notification si elle existe lors du retour en arrière
+            window.onload = function() {
+                const notification = document.querySelector('.notification-redirection');
+                if (notification) {
+            notification.style.display = 'none';
+                 }
+                };
+            // Masquer la notification si elle existe lors du retour en arrière
+window.onload = function() {
+    const notification = document.querySelector('.notification-redirection');
+    if (notification) {
+        notification.style.display = 'none';
+    }
+};
+    
     </script>
     
 </body>
