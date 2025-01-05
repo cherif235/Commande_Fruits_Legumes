@@ -134,10 +134,11 @@ footer {
     padding: 15px 0;
     background-color: #f4f4f4;
     color: #666;
-    position: absolute;
-    bottom: 0;
+    position: relative;  /* Changer de absolute à relative */
     width: 100%;
+    margin-top: auto; /* Ajoute cet élément pour que le footer se colle en bas */
 }
+
 
 footer p {
     margin: 0;
