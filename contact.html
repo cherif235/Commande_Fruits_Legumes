@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes ici pour répondre à toutes vos questions et préoccupations.</p>
+        </div>
+    </header>
+    <main>
+        <section class="contact-details">
+            <h2>📞 Contactez-nous directement</h2>
+            <p>
+                <strong>Email :</strong> contact@fruits-et-legumes.com<br>
+                <strong>Téléphone :</strong> +33 7 80 85 99 10 <br>
+                <strong>Adresse :</strong>  25 Avenue fouchet, Pau, France
+            </p>
+        </section>
+        <section class="contact-form">
+            <h2>📧 Envoyez-nous un message</h2>
+            <form id="contact-form">
+                <label for="name">Votre Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                
+                <label for="email">Votre Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                
+                <label for="message">Votre Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tapez votre message ici..." required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a> | © 2025 Fruits et Légumes. Tous droits réservés.</p>
+    </footer>
+    <script>
+        // Gérer l'envoi du formulaire
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Merci de nous avoir contactés ! Nous reviendrons vers vous sous peu.');
+        });
+    </script>
+</body>
+</html>

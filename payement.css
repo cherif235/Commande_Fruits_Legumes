@@ -1,0 +1,362 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.payment-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fa;
+}
+
+.container-paiement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Hauteur du viewport moins le footer */
+}
+
+.paiement-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.payer-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.payer-button:hover {
+    background-color: #218838;
+}
+
+.security-message {
+    margin-top: 20px;
+    background-color: #e9f7ef;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.security-message img {
+    margin-right: 15px;
+}
+
+.security-message p {
+    margin: 0;
+    color: #2e8b57;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.paiement-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paiement-header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.paiement-sec-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre l'image et le texte */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.paiement-sec-image {
+    width: 80px; /* Taille réduite de l'image */
+    height: 60px;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    object-fit: cover; /* Ajuste l'image pour rester jolie */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cvv::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+ /* Style de la notification de validation */
+.notification-validation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 10000;
+    font-size: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: showValidation 1s ease-in-out, pulseEffect 3s infinite;
+    opacity: 0.95;
+}
+
+.notification-validation h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.notification-validation p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.checkmark-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    animation: rotateCheck 2s infinite ease-in-out;
+}
+
+@keyframes showValidation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translate(-50%, -50%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+@keyframes pulseEffect {
+    0% {
+        box-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(76, 175, 80, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+    }
+}
+
+@keyframes rotateCheck {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#expiration-date::placeholder {
+    color: rgba(120, 120, 120, 0.8);
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/* Style par défaut */
+.payment-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input,
+  button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Media queries pour les écrans moyens */
+  @media (max-width: 768px) {
+    .payment-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    input,
+    button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .security-message {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Media queries pour les petits écrans (smartphones) */
+  @media (max-width: 480px) {
+    .payment-container {
+      width: 100%;
+      margin: 20px 10px;
+      padding: 10px;
+    }
+  
+    input,
+    button {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    h1,
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .security-message img {
+      width: 30px; /* Réduction de la taille de l'icône sur mobile */
+    }
+  
+    .cvv-input,
+    .card-number-input {
+      max-width: 100%;
+    }
+  }
+  .card-number-input {
+    width: 100%; /* Pour qu'il occupe toute la largeur disponible */
+  }
+  
+  .cvv-input {
+    width: 60px; /* Le CVV est généralement court */
+  }
+  
+  .expiration-date-input {
+    width: 100%; /* Ajustement pour être responsive */
+  }
+  .paiement-sec-header img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+  }
+  
+  .notification-redirection {
+    width: 90%;
+  }
+      
+
+
+  
